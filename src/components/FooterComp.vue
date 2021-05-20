@@ -52,12 +52,19 @@
     </div>
   </div>
   <div class="down-fot"> <!-- footerino micro con signup e i social di strocazzo -->
-  <div class="container">
+    <div class="container">
     <div class="ft-but">
       <button><a href="#">SIGN UP NOW</a></button>
     </div>
-    <div>
-      <!-- socials di staminchia -->
+    <div  class="socials"> <!-- socials di staminchia -->
+      <ul>
+        <li><a href="#">FOLLOW US</a></li>
+        <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
+        <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a></li>
+        <li><a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a></li>
+      </ul>
     </div>
   </div>
 
@@ -131,15 +138,27 @@ footer{
   background-color: rgb(48, 48, 48);
   border: 2px solid blue;
   padding: 15px;
-  a{
+    a{
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-  }
+    }
 }
 }
 
+
 //footer socials stocazzo
+.socials{
+  width: 50%;
+  text-align: right;
+  background-color: yellowgreen;
+  ul{
+    list-style: none;
+    li{
+      display: inline;
+    }
+  }
+}
 
 
 

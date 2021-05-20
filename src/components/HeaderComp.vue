@@ -1,14 +1,14 @@
 <template>
 <header class="container">
   <!-- LOGO -->
-  <div class="cols">
+  <div class="head-logo">
     <a href="/">
       <img src="../assets/img/dc-logo.png" alt="">
     </a>
   </div>
 
 <!-- NAVBAR -->
-  <div class="cols">
+  <div class="head-nav">
     <nav>
       <ul>
         <li v-for="(link, index) in links" :key="index">
@@ -92,24 +92,45 @@ header{
   align-items: center;
 }
 
-.cols{
-  flex-basis: calc(100% / 2);
+.head-logo, 
+.head-nav{
+  width: 50%;
 }
 
- ul{
-   display: flex;
-   justify-content: left;
-   margin: 2rem 0;
-   a{
-     padding: 1rem;
-     color: rgb(79, 76, 72);
-     text-transform: uppercase;
-     &:hover,
-     &.active{
-       border-bottom: 4px solid rgb(2, 130, 249);
-     }
-   }
- }
+.head-logo{
+  background-color: wheat;
+}
+
+.head-nav{
+  background-color: violet;
+  nav{
+    width: 100%;
+  }
+}
+
+ul{
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  margin: 2rem 0;
+  a{
+    padding: 1rem;
+    color: rgb(79, 76, 72);
+    text-transform: uppercase;
+    &:hover,
+    &.active{
+      border-bottom: 4px solid rgb(2, 130, 249);
+
+    }
+  }
+  
+}
+
+
+
+
+
+
 
   
 
