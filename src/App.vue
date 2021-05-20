@@ -45,7 +45,7 @@ a{
 // container lo vado a mettere in tutti i div di tutti i mod xkè è generico 
 .container{
   display: flex;
-  width: 70%;
+  width: 65%;
   margin: 0 auto;
 }
 
