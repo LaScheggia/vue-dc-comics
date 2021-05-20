@@ -25,5 +25,28 @@ export default {
 
 
 <style lang="scss">
+// . GENERAL
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// le liste in general xkè vale su tutte
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+// ^ UTILITIES
+// container lo vado a mettere in tutti i div di tutti i mod xkè è generico 
+.container{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
 
 </style>
