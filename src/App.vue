@@ -2,6 +2,8 @@
   <div id="app">
     <header-comp/>
     <main-comp/>
+    <jumbo-comp/>
+
     <footer-comp/>
 
 
@@ -11,13 +13,16 @@
 <script>
 import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
+import JumboComp from './components/JumboComp.vue'
 import FooterComp from './components/FooterComp.vue'
+
 
 export default {
   name: 'App',
   components: {
     HeaderComp,
     MainComp,
+    JumboComp,
     FooterComp,
   }
 }
@@ -25,28 +30,9 @@ export default {
 
 
 <style lang="scss">
-// . GENERAL
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import './assets/style/general.scss';
+@import './assets/style/utilities.scss'
 
-// le liste in general xkè vale su tutte
-ul{
-  list-style: none;
-}
 
-a{
-  text-decoration: none;
-}
-
-// ^ UTILITIES
-// container lo vado a mettere in tutti i div di tutti i mod xkè è generico 
-.container{
-  display: flex;
-  width: 65%;
-  margin: 0 auto;
-}
 
 </style>

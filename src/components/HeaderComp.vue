@@ -3,7 +3,7 @@
   <!-- LOGO -->
   <div class="head-logo">
     <a href="/">
-      <img src="../assets/img/dc-logo.png" alt="">
+      <img src="../assets/img/dc-logo.png" alt="logo png">
     </a>
   </div>
 
@@ -85,24 +85,21 @@ export default {
 </script>
 
 <style lang="scss" scoped> // ^ abc
+@import '../assets/style/vars.scss';
+
 header{
-  height: 150px;
-  background-color: aquamarine;
+  height: 120px;
   display: flex;
   align-items: center;
 }
 
-.head-logo, 
-.head-nav{
-  width: 50%;
-}
 
 .head-logo{
-  background-color: wheat;
+  width: 35%;
 }
 
 .head-nav{
-  background-color: violet;
+  width: auto;
   nav{
     width: 100%;
   }
@@ -113,17 +110,17 @@ ul{
   width: 100%;
   justify-content: right;
   margin: 2rem 0;
+  font-size: 0.85rem;
   a{
     padding: 1rem;
     color: rgb(79, 76, 72);
     text-transform: uppercase;
     &:hover,
     &.active{
-      border-bottom: 4px solid rgb(2, 130, 249);
-
+      padding-bottom: 48px;
+      border-bottom: 5px solid $blue-dc;
     }
   }
-  
 }
 
 

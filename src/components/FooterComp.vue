@@ -54,11 +54,11 @@
   <div class="down-fot"> <!-- footerino micro con signup e i social di strocazzo -->
     <div class="container">
     <div class="ft-but">
-      <button><a href="#">SIGN UP NOW</a></button>
+      <button><a href="#">SIGN UP NOW!</a></button>
     </div>
     <div  class="socials"> <!-- socials di staminchia -->
+      <span><h5>FOLLOW US</h5></span>
       <ul>
-        <li><a href="#">FOLLOW US</a></li>
         <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
         <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
         <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
@@ -84,9 +84,12 @@ export default {
 footer{
   height: 500px;
   background-image: url(../assets/img/footer-bg.jpg);
+  background-size: cover;
 }
 
 // ^ PARTE CON LISTE E SECONDA BG IMG
+@import '../assets/style/vars.scss';
+
 .up-fot{
   height: 450px;
   background-color: rgba(0, 0, 255, 0.281);
@@ -126,17 +129,19 @@ footer{
 
 // ^ PARTE CON BTN E SOCIALS
 .down-fot{
-  height: 150px;
+  padding: 50px 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
   background-color: rgb(48, 48, 48);
 }
 
 //footer bottone
 .ft-but{
   width: 50%;
-  background-color: yellow;
     button{
   background-color: rgb(48, 48, 48);
-  border: 2px solid blue;
+  border: 3px solid $blue-dc;
   padding: 15px;
     a{
     color: white;
@@ -151,19 +156,24 @@ footer{
 .socials{
   width: 50%;
   text-align: right;
-  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   ul{
     list-style: none;
     li{
+      padding: 5px;
       display: inline;
     }
   }
 }
 
-
-
-
-
+.socials h5{
+  padding-right: 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: $blue-dc;
+}
 
 
 
