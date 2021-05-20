@@ -1,6 +1,6 @@
 <template>
   <main class="main-bg">
-    <div class="container ">
+    <div class="container">
       <h1>
         CONTENT GOES HERE -->
       </h1>
@@ -22,5 +22,6 @@ export default {
   color: bisque;
   background-color: black;
 }
+
 
 </style>

@@ -92,7 +92,6 @@ footer{
 
 .up-fot{
   height: 450px;
-  background-color: rgba(0, 0, 255, 0.281);
 }
 
 .listy{
@@ -124,6 +123,7 @@ footer{
   width: 50%;
   display: flex;
   background-image: url(../assets/img/dc-logo-bg.png);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

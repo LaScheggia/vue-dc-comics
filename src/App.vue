@@ -34,5 +34,4 @@ export default {
 @import './assets/style/utilities.scss'
 
 
-
 </style>
