@@ -49,13 +49,20 @@ export default {
 
 .jumbo-pics{
   display: flex;
-  
   ul{
     display: flex;
-    
     li{
-      align-content: space-around;
-      height: 80px;
+      align-content: space-between;
+      padding: 10px;
+      a{
+        text-transform: uppercase;
+        color: white;
+      }
+
+      img{
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 }

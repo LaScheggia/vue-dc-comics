@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 div{
   display: flex;
-  flex-basis: calc(100% / 7);
+  flex-basis: calc(100% / 8);
   img{
     width: 200px;
     height: 200px;
