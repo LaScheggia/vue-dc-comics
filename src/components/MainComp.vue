@@ -48,6 +48,8 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/style/vars.scss';
+@import '../assets/style/mixins.scss';
+
 .main-bg{
   padding: 50px 0;
   color: bisque;
@@ -66,16 +68,10 @@ export default {
 }
 
 button{
-  background-color: $blue-dc;
-  padding: 10px 25px;
-  border: 0;
-  text-transform: uppercase;
-  font-weight: bolder;
-  &:hover{
-    background-color: rgb(20, 83, 143);
-  }
+ @include btn-dc;
   a{
     color: white;
+    text-transform: uppercase;
   }
 }
 

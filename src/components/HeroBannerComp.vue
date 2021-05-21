@@ -19,6 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/style/vars.scss';
+@import '../assets/style/mixins.scss';
 
 .hero{
   background-image: url(../assets/img/jumbotron.jpg);
@@ -27,14 +28,8 @@ export default {
 }
 
 button{
-  background-color: $blue-dc;
-  padding: 10px 20px;
-  border: 0;
-  color: white;
-  font-weight: bolder;
-  &:hover{
-    background-color: rgb(20, 83, 143);
-  }
+  @include btn-dc;
+
 }
 
 </style>
