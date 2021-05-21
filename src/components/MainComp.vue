@@ -18,6 +18,13 @@
 
     </div>
 
+    <div class="btn">
+
+      <button>
+        CURRENT SERIES
+      </button>
+    </div>
+
   </main>
 </template>
 
@@ -47,11 +54,11 @@ export default {
 
 
 <style lang="scss" scoped>
+@import '../assets/style/vars.scss';
 .main-bg{
   padding: 50px 0;
   color: bisque;
   background-color: black;
-  
 }
 
 .comics-card{
@@ -60,6 +67,20 @@ export default {
   align-content: space-around;
 }
 
+.btn{
+  display: flex;
+  background-color: whitesmoke;
+}
+
+button{
+
+  background-color: $blue-dc;
+  padding: 10px 20px;
+  border: 0;
+  color: white;
+  font-weight: bolder;
+  justify-content: center;
+}
 
 
 </style>
