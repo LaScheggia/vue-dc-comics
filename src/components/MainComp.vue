@@ -9,11 +9,11 @@
         :card="comic"
         />
 
-<!--         <h1 
+        <h1 
         v-for="(comic, index) in comics" 
         :key="index">
           {{ comic.series }}
-        </h1> -->
+        </h1>
       </div>
 
     </div>
@@ -56,7 +56,7 @@ export default {
 
 .comics-card{
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   align-content: space-around;
 }
 
