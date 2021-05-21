@@ -43,7 +43,7 @@ export default {
 @import '../assets/style/vars.scss';
 
 .jumbo{
-  height: 150px;
+  height: 100px;
   background-color: $blue-dc;
 }
 

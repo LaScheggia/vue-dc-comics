@@ -3,6 +3,9 @@
     <img 
     :src="card.thumb"  
     :alt="card.type">
+    <p>
+      {{ card.series }}
+    </p>
   </div>
 </template>
 
@@ -18,11 +21,15 @@ export default {
 
 <style lang="scss" scoped>
 div{
-  display: flex;
-  flex-basis: calc(100% / 8);
+  flex-basis: calc(100% / 6);
+  padding: 5px;
   img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+  }
+  p{
+    font-size: 0.8rem;
+    text-transform: uppercase;
   }
 }
 

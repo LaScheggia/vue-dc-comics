@@ -8,20 +8,13 @@
         :key="index"
         :card="comic"
         />
-
-        <h1 
-        v-for="(comic, index) in comics" 
-        :key="index">
-          {{ comic.series }}
-        </h1>
       </div>
 
     </div>
 
     <div class="btn">
-
       <button>
-        CURRENT SERIES
+        <a href="#">load more</a>
       </button>
     </div>
 
@@ -63,23 +56,27 @@ export default {
 
 .comics-card{
   display: flex;
-  flex-flow: wrap;
-  align-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 45px;
 }
 
 .btn{
   display: flex;
-  background-color: whitesmoke;
+  justify-content: center;
 }
 
 button{
-
   background-color: $blue-dc;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: 0;
-  color: white;
+  text-transform: uppercase;
   font-weight: bolder;
-  justify-content: center;
+  &:hover{
+    background-color: rgb(20, 83, 143);
+  }
+  a{
+    color: white;
+  }
 }
 
 
