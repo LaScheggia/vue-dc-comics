@@ -10,11 +10,27 @@
 </template>
 
 <script>
-export default {
-  name: 'Main'
+import comics from "@/assets/data/dc-comics.js";
+import ComicsCard from "@/components/ComicsCard";
 
+export default {
+  name: 'Main',
+  components: {
+    ComicsCard
+  },
+  data(){
+    return{
+      comics
+    }
+  },
+  mounted(){
+    console.log(comics)
+
+  },
 }
 </script>
+
+
 
 <style lang="scss" scoped>
 .main-bg{
