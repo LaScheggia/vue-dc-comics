@@ -1,17 +1,20 @@
 <template>
   <main class="main-bg">
     <div class="container">
-      <comics-card 
-      v:for="(comic, index) in comics"
-      :key="index"
-      :card="comic"
-      />
 
-      <h1 
-      v:for="(comic, index) in comics" 
-      :key="index">
-        {{ series }}
-      </h1>
+      <div class="comics-card">
+        <comics-card 
+        v-for="(comic, index) in comics" 
+        :key="index"
+        :card="comic"
+        />
+
+        <h1 
+        v-for="(comic, index) in comics" 
+        :key="index">
+          {{ comic.series }}
+        </h1>
+      </div>
 
     </div>
 
@@ -27,7 +30,7 @@ import ComicsCard from "@/components/ComicsCard";
 export default {
   name: 'Main',
   components: {
-    ComicsCard
+    ComicsCard //qua lo inizializzo
   },
   data(){
     return{
@@ -48,7 +51,14 @@ export default {
   padding: 50px 0;
   color: bisque;
   background-color: black;
+  
 }
+
+.comics-card{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 
 </style>

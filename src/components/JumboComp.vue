@@ -49,11 +49,11 @@ export default {
 
 .jumbo-pics{
   display: flex;
+  
   ul{
     display: flex;
-    display: inline-flex;
     
-    img{
+    li{
       align-content: space-around;
       height: 80px;
     }
