@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img :src="card.thumb" :alt="card.type">
+    <img 
+    :src="card.thumb" 
+    :alt="card.type">
   </div>
 </template>
 

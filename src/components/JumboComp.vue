@@ -5,7 +5,7 @@
       <ul>
         <li>
           <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-          <a href="#">Digital Commics</a>
+          <a href="#">Digital Comics</a>
         </li>
         <li>
           <img src="../assets/img/buy-comics-merchandise.png" alt="">
@@ -45,14 +45,16 @@ export default {
 .jumbo{
   height: 150px;
   background-color: $blue-dc;
-
 }
 
 .jumbo-pics{
   display: flex;
   ul{
+    display: flex;
     display: inline-flex;
+    
     img{
+      align-content: space-around;
       height: 80px;
     }
   }
